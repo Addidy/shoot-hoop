@@ -7,13 +7,17 @@ public class ScoreKeeper : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        DontDestroyOnLoad(gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    public int GetScore() {
+        return score;
+    }
 
     public void IncrementScore(int value) {
         score += value;
