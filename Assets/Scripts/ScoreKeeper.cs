@@ -22,5 +22,7 @@ public class ScoreKeeper : MonoBehaviour {
     public void IncrementScore(int value) {
         score += value;
         print("Ball Hit Target, score: " + score);
+        AudioSource source = GetComponent<AudioSource>();
+        source.Play();
     }
 }
